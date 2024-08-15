@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 import  { useRef, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom"; // Use react-router for routing
-
+import imgg from '../../asset/2024-08-15 16.25.46.jpg'
 import axios from "axios";
 import { MainImageAPI } from "../API/API";
 
@@ -102,15 +103,23 @@ useState(()=>{
 
 const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold text-back text-white">
-        The Ultimate <br /> development studio
+    <div className="max-w-7xl grid grid-cols-2 relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
+     <div>
+     <h1 className="text-2xl  md:text-7xl font-bold text-back text-white">
+     Get in Touch
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-white dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      I'm Fathima Maleeha, a Python developer with a deep passion for coding, learning, and creating.
+       As a self-taught and quick learner, I specialize in Python and continuously strive to master new skills. 
+       If you're interested in collaborating or just want to chat about development, feel free to reach out. 
+       I'm always excited to connect with like-minded professionals and enthusiasts.
+
+
       </p>
+     </div>
+      <div className="flex justify-center items-center">
+      <img src={imgg} alt={imgg}  className="h-[300px] rounded-full  object-cover" />
+      </div>
     </div>
   );
 };

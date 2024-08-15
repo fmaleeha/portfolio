@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import axios from "axios";
 import { TestimonialsAPI } from "../API/API";
 
-export function InfiniteMovingCardsDemo() {
+export function InfiniteMovingCard() {
 const [testimonials ,setTestimonials]=useState([])
   useEffect(()=>{
     axios.get(TestimonialsAPI)

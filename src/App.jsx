@@ -4,7 +4,7 @@
 import { HeroScroll } from './components/Hero/Hero';
 import StarsCanvas from './components/Hero/Star';
 import { HeroParalla } from './components/Projeact/Projeact';
-import { BrowserRouter as Router } from 'react-router-dom';
+
 import './index.css';
 import { ExpandableCard } from './components/Blogs/Blogs';
 import { InfiniteMovingCard } from './components/Card/Card';
@@ -14,16 +14,18 @@ import ContactPage from './components/Contact/Contact';
 import { CardHoverEffect } from './components/Hobbeis/Hobis';
 import { useState } from 'react';
 import Skill from './components/Skill/Skill';
+import PasswordForm from './components/Auth/Logine';
 
 
 
 
 function App() {
   const [start,setStar]=useState(true)
+  
   return (
     <div  className='bg-black'> 
 
-      <Router>
+      
         <Navbar setStar={setStar}/>
      
         <div className="relative ">
@@ -41,9 +43,10 @@ function App() {
      
        <InfiniteMovingCard/>
       <ContactPage/>
+      <PasswordForm/>
       </div>
     </div>
-    </Router>
+
     </div>
   );
 }

@@ -1,4 +1,7 @@
+/* eslint-disable no-undef */
+// eslint-disable-next-line no-unused-vars
 const defaultTheme = require('tailwindcss/defaultTheme');
+// eslint-disable-next-line no-unused-vars
 const colors = require('tailwindcss/colors');
 const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default;
 

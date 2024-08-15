@@ -25,14 +25,15 @@ const Navbar = ({setStar}) => {
       
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center p-2 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+          className="inline-flex items-center p-1 text-2xl text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
           aria-controls="navbar"
           aria-expanded={isOpen}
         >
           {isOpen ? (
-            <DiBackbone className="w-6 h-6 text-red-300" />
+            <DiBackbone 
+            className="w-6 h-6 text-2xl text-red-90" />
           ) : (
-            <DiBackbone className="w-6 h-6 text-red-950" />
+            <DiBackbone className="w-6 h-6 text-3xl text-red-950" />
           )}
           <span className="sr-only">Open main menu</span>
         </button>

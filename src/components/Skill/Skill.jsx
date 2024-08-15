@@ -17,7 +17,7 @@ const Skill = () => {
       <div className=" grid gap-10 md:grid-cols-2">
         {skill.map((e) => (
           <div key={e.id} className="grid gap-10 grid-cols-2">
-            <img src={e.img} alt={e.name} className="h-[100px] w-[100px] rounded-full" />
+            <img src={e.img} alt={e.name} className="h-[100px] w-[100px] object-cover rounded-full" />
            <div className="flex  flex-col gap-2">
            <div className="text-white font-bold">{e.name}</div>
             <div className="w-full max-w-xs">
