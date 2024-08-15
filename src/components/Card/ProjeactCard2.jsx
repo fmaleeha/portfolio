@@ -5,7 +5,7 @@ import { useState } from "react";
 import axios from "axios";
 import { ProjeactAPI } from "../API/API";
 
-export function AnimatedPinDemo() {
+export function AnimatedPin() {
 const [pro,setPro]=useState([])
 
 useState(()=>{
@@ -16,7 +16,7 @@ useState(()=>{
 
 
   return (
-   <div className="h-[100vh] flex flex-col justify-center items-center gap-10 ">
+   <div id="projeact" className="h-[100vh] flex flex-col justify-center items-center gap-10 ">
     <div className="text-white font-bold text-2xl mt-10">See My Projeact Word</div>
      <div className=" w-full h-[50rem] flex items-center justify-center flex-wrap gap-10 overflow-auto">
         {pro.map((e)=>{

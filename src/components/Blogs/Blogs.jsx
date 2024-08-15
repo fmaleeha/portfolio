@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import axios from 'axios';
 import { BlogsAPI } from '../API/API';
 
-export function ExpandableCardDemo() {
+export function ExpandableCard() {
   const [active, setActive] = useState(null);
   const [blog, setBlog] = useState([]);
   const ref = useRef(null);
@@ -40,7 +40,7 @@ export function ExpandableCardDemo() {
   };
 
   return (
-    <div className='h-screen flex flex-col items-center justify-center gap-10 w-full p-4'>
+    <div  id='blog' className='h-screen flex flex-col items-center justify-center gap-10 w-full p-4'>
       <div className="text-white font-bold text-2xl md:text-3xl lg:text-4xl mt-10">See My Blog</div>
       <div className='w-[100vw] grid   justify-center items-center overflow-auto h-[90vh] gap-4 md:gap-6'>
         {blog.map((card) => (
@@ -50,7 +50,7 @@ export function ExpandableCardDemo() {
             className="w-full sm:w-[500px] md:w-[800px] lg:w-[900px] p-4 cursor-pointer"
           >
             <motion.div
-              className="flex flex-col md:flex-row justify-between items-center bg-white hover:bg-black rounded-lg shadow-md cursor-pointer hover:text-white dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-all duration-300 p-4 md:p-6"
+              className="flex flex-col text-white md:flex-row justify-between items-center black hover:bg-white border border-gray-800 rounded-lg shadow-md cursor-pointer hover:text-black dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-all duration-300 p-4 md:p-6"
             >
               <motion.div>
                 <img

@@ -2,7 +2,8 @@ import  { useState, useEffect, useRef } from 'react';
 
 import { DiBackbone } from "react-icons/di";
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({setStar}) => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef();
 
@@ -39,8 +40,8 @@ const Navbar = () => {
           ref={ref}
           className={`fixed top-0 left-0 z-50 w-64 h-full text-white dark:bg-gray-800 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:flex md:w-auto md:h-auto`}
         >
-          <ul className="flex flex-col p-4 backdrop-blur-sm gap-9 mt-9 md:mt-0 md:gap-0 h-[100vh] md:h-[0] space-y-4 md:space-y-0 md:flex-row md:space-x-8">
-            <li>
+          <ul  onClick={() => setIsOpen(!isOpen)} className="flex flex-col p-4 backdrop-blur-sm  gap-9 mt-9 md:mt-0 md:gap-0 h-[100vh] md:h-[50px] space-y-4 md:space-y-0 md:flex-row md:space-x-8">
+            <li >
               <a
                 href="#"
                 className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
@@ -48,9 +49,11 @@ const Navbar = () => {
                 Home
               </a>
             </li>
+          
+         
             <li>
               <a
-                href="#"
+                href="#about"
                 className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
               >
                 About
@@ -58,28 +61,43 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#skill"
                 className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
               >
-                Services
+                Skill
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#projeact
+"
                 className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
               >
-                Pricing
+               Projeact
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#blog"
+                className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
+              >
+                My Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
                 className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
               >
                 Contact
               </a>
             </li>
+            <button
+             className="block px-3 text-white dark:text-white hover:text-[#6237A0] transition-transform  transform duration-300 hover:scale-105"
+            onClick={()=>setStar((pre)=>!pre)}
+            >
+              SpaceX
+            </button>
           </ul>
         </div>
       </div>

@@ -1,3 +1,6 @@
 export const BlogsAPI = "http://localhost:3004/blog"
 export const ProjeactAPI ="http://localhost:3004/project"
 export const MainImageAPI="http://localhost:3004/MainImage"
+export const HabbitAPI = "http://localhost:3004/habbit"
+export const TestimonialsAPI="http://localhost:3004/testimonials"
+export const SkillAPI ="http://localhost:3004/skills"

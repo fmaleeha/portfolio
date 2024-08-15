@@ -1,39 +1,45 @@
 // App.jsx
 
 
-import { HeroScrollDemo } from './components/Hero/Hero';
+import { HeroScroll } from './components/Hero/Hero';
 import StarsCanvas from './components/Hero/Star';
-import { HeroParallaxDemo } from './components/Projeact/Projeact';
+import { HeroParalla } from './components/Projeact/Projeact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
-import { ExpandableCardDemo } from './components/Blogs/Blogs';
-import { InfiniteMovingCardsDemo } from './components/Card/Card';
-import { AnimatedPinDemo } from './components/Card/ProjeactCard2';
+import { ExpandableCard } from './components/Blogs/Blogs';
+import { InfiniteMovingCard } from './components/Card/Card';
+import { AnimatedPin } from './components/Card/ProjeactCard2';
 import Navbar from './components/Navbar.jsx/SideBar';
 import ContactPage from './components/Contact/Contact';
-import { CardHoverEffectDemo } from './components/Hobbeis/Hobis';
+import { CardHoverEffect } from './components/Hobbeis/Hobis';
+import { useState } from 'react';
+import Skill from './components/Skill/Skill';
 
 
 
 
 function App() {
+  const [start,setStar]=useState(true)
   return (
     <div  className='bg-black'> 
+
       <Router>
-        <Navbar/>
+        <Navbar setStar={setStar}/>
      
         <div className="relative ">
-      <StarsCanvas />
+          {  start &&     <StarsCanvas />}
+  
       {/* Other content can go here */}
       <div className="relative z-10">
-       <HeroScrollDemo/>
- 
-       <HeroParallaxDemo/>
-       <CardHoverEffectDemo/>
-       <AnimatedPinDemo/>
-       <ExpandableCardDemo/>
+       <HeroScroll/>
+
+       <HeroParalla/>
+       <Skill/>
+       <CardHoverEffect/>
+       <AnimatedPin/>
+       <ExpandableCard/>
      
-       <InfiniteMovingCardsDemo/>
+       <InfiniteMovingCard/>
       <ContactPage/>
       </div>
     </div>
