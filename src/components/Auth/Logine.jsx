@@ -43,7 +43,7 @@ const PasswordForm = () => {
       
           </button>
         ) : (
-          <div>
+          <div className='flex justify-center items-center gap-3'>
             <input
               type="password"
               value={inputPassword}
@@ -51,7 +51,7 @@ const PasswordForm = () => {
               className="mb-4 p-2 border border-gray-300 rounded w-full"
               placeholder="Enter password"
             />
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center gap-2">
               <button
                 onClick={handleSubmit}
                 className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"

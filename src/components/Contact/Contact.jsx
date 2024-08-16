@@ -27,7 +27,7 @@ const ContactPage = () => {
 
     setLoading(true);
 
-    axios.post('http://localhost:3004/contas', formData)
+    axios.post('https://jsonemi-2.onrender.com/contas', formData)
       .then(() => {
         toast.success('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
@@ -49,7 +49,7 @@ const ContactPage = () => {
         className="dark:bg-gray-800 rounded-lg shadow-lg p-6 max-w-md w-full"
       >
         <h1 className="text-2xl font-bold mb-4 text-center text-white dark:text-white">
-          Contact Us
+        Contact Me
         </h1>
         <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
           <div>

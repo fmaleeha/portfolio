@@ -52,13 +52,13 @@ export const InfiniteMovingCards = ({
           duration = "20s";
           break;
         case "normal":
-          duration = "40s";
+          duration = "20s";
           break;
         case "slow":
-          duration = "80s";
+          duration = "20s";
           break;
         default:
-          duration = "40s";
+          duration = "20s";
       }
       containerRef.current.style.setProperty("--animation-duration", duration);
     }

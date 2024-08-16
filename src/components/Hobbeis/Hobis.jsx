@@ -11,8 +11,8 @@ export function CardHoverEffect() {
       .catch((res)=>console.log(res))
   },[])
   return (
-    <div className="max-w-5xl mx-auto px-8 min-h-[100vh] flex  flex-col gap-7 justify-center items-center">
-        <div className="text-white font-bold">This Is my HOobes</div>
+    <div className="max-w-5xl mx-auto px-8 h-[100vh] flex  flex-col gap-7 justify-center items-center">
+        <div className="text-white font-bold">The Path Forward</div>
       <HoverEffect items={projects} />
     </div>
   );

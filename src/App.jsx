@@ -20,7 +20,7 @@ import PasswordForm from './components/Auth/Logine';
 
 
 function App() {
-  const [start,setStar]=useState(true)
+  const [start,setStar]=useState(false)
   
   return (
     <div  className='bg-black'> 

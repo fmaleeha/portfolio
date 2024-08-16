@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify'; // Import Toastify
 import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 import Sidebar from './Navbar';
 
-const API_URL = 'http://localhost:3004/contas'; // Your API endpoint
+const API_URL = 'https://jsonemi-2.onrender.com/contas'; // Your API endpoint
 
 const ContactPage = () => {
   const [contacts, setContacts] = useState([]);

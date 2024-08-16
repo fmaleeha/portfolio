@@ -70,29 +70,29 @@ useState(()=>{
         }}
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
+          {firstRow.map((product,i) => (
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={i}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row mb-20 space-x-20">
-          {secondRow.map((product) => (
+          {secondRow.map((product,i) => (
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={i}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
+          {thirdRow.map((product,i) => (
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={i}
             />
           ))}
         </motion.div>
@@ -103,8 +103,12 @@ useState(()=>{
 
 const Header = () => {
   return (
-    <div className="max-w-7xl grid grid-cols-2 relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
-     <div>
+    <div className="max-w-7xl grid md:grid-cols-2 gap-10 relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
+    
+      <div className="flex justify-center items-center">
+      <img data-aos="fade-right" src={imgg} alt={imgg}  className="h-[300px] rounded-full  object-cover" />
+      </div>
+      <div data-aos="fade-left">
      <h1 className="text-2xl  md:text-7xl font-bold text-back text-white">
      Get in Touch
       </h1>
@@ -117,9 +121,6 @@ const Header = () => {
 
       </p>
      </div>
-      <div className="flex justify-center items-center">
-      <img src={imgg} alt={imgg}  className="h-[300px] rounded-full  object-cover" />
-      </div>
     </div>
   );
 };

@@ -41,13 +41,14 @@ export function ExpandableCard() {
 
   return (
     <div  id='blog' className='h-screen flex flex-col items-center justify-center gap-10 w-full p-4'>
-      <div className="text-white font-bold text-2xl md:text-3xl lg:text-4xl mt-10">See My Blog</div>
+      <div className="text-white font-bold text-2xl md:text-3xl lg:text-4xl mt-10">My Latest Thoughts</div>
       <div className='w-[100vw] grid   justify-center items-center overflow-auto h-[90vh] gap-4 md:gap-6'>
         {blog.map((card) => (
           <div
             key={card.id}
+            data-aos="zoom-in-up"
             onClick={() => handleActivate(card.id)}
-            className="w-full sm:w-[500px] md:w-[800px] lg:w-[900px] p-4 cursor-pointer"
+            className="w-[300px] sm:w-[500px] md:w-[800px] lg:w-[900px] p-4 cursor-pointer"
           >
             <motion.div
               className="flex flex-col text-white md:flex-row justify-between items-center black hover:bg-white border border-gray-800 rounded-lg shadow-md cursor-pointer hover:text-black dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-all duration-300 p-4 md:p-6"

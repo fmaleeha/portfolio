@@ -13,10 +13,10 @@ const Skill = () => {
 
   return (
     <div id="skill" className="flex min-h-screen flex-col gap-10 text-2xl font-extrabold justify-center items-center  p-6">
-      <div className="text-white">Skills</div>
+      <div className="text-white"> Crafted Abilities</div>
       <div className=" grid gap-10 md:grid-cols-2">
         {skill.map((e) => (
-          <div key={e.id} className="grid gap-10 grid-cols-2">
+          <div key={e.id} className="grid gap-10 grid-cols-2" data-aos="zoom-in">
             <img src={e.img} alt={e.name} className="h-[100px] w-[100px] object-cover rounded-full" />
            <div className="flex  flex-col gap-2">
            <div className="text-white font-bold">{e.name}</div>

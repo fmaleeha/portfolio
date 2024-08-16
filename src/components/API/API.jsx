@@ -1,6 +1,12 @@
-export const BlogsAPI = "http://localhost:3004/blog"
-export const ProjeactAPI ="http://localhost:3004/project"
-export const MainImageAPI="http://localhost:3004/MainImage"
-export const HabbitAPI = "http://localhost:3004/habbit"
-export const TestimonialsAPI="http://localhost:3004/testimonials"
-export const SkillAPI ="http://localhost:3004/skills"
+
+
+export const BlogsAPI = "https://jsonemi-2.onrender.com/blog"
+export const ProjeactAPI ="https://jsonemi-2.onrender.com/project"
+export const MainImageAPI="https://jsonemi-2.onrender.com/MainImage"
+export const HabbitAPI = "https://jsonemi-2.onrender.com/habbit"
+export const TestimonialsAPI="https://jsonemi-2.onrender.com/testimonials"
+export const SkillAPI ="https://jsonemi-2.onrender.com/skills"
+
+
+
+

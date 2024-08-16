@@ -80,7 +80,7 @@ const AdminHome = () => {
           onClick={() => setEditingItem({})}
           className="mb-4 bg-green-600 hover:bg-green-700 transition duration-300 text-white p-2 rounded-lg"
         >
-          Add New Skill
+         Crafted Abilities
         </button>
         {editingItem ? (
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
