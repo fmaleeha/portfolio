@@ -1,11 +1,11 @@
 
 
-export const BlogsAPI = "https://jsonemi-2.onrender.com/blog"
-export const ProjeactAPI ="https://jsonemi-2.onrender.com/project"
-export const MainImageAPI="https://jsonemi-2.onrender.com/MainImage"
-export const HabbitAPI = "https://jsonemi-2.onrender.com/habbit"
-export const TestimonialsAPI="https://jsonemi-2.onrender.com/testimonials"
-export const SkillAPI ="https://jsonemi-2.onrender.com/skills"
+export const BlogsAPI = "https://fmaleeha.github.io/Jsoneportfolio/blog.json"
+export const ProjeactAPI ="https://fmaleeha.github.io/Jsoneportfolio/project.json"
+export const MainImageAPI="https://fmaleeha.github.io/Jsoneportfolio/MainImage.json"
+export const HabbitAPI = "https://fmaleeha.github.io/Jsoneportfolio/myPath.json"
+export const TestimonialsAPI="https://fmaleeha.github.io/Jsoneportfolio/testimonials.json"
+export const SkillAPI ="https://fmaleeha.github.io/Jsoneportfolio/skills.json"
 
 
 
