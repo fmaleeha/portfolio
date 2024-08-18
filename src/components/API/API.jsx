@@ -7,6 +7,6 @@ export const HabbitAPI = "https://fmaleeha.github.io/Jsoneportfolio/myPath.json"
 export const TestimonialsAPI="https://fmaleeha.github.io/Jsoneportfolio/testimonials.json"
 export const SkillAPI ="https://fmaleeha.github.io/Jsoneportfolio/skills.json"
 
-//"dfa"dd
+//"dfa"ddd
 
 
