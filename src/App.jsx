@@ -20,7 +20,7 @@ import Skill from './components/Skill/Skill';
 
 
 function App() {
-  const [start,setStar]=useState(false)
+  const [start,setStar]=useState(true)
   
   return (
     <div  className='bg-black'> 
