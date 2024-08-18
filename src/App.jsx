@@ -14,7 +14,7 @@ import ContactPage from './components/Contact/Contact';
 import { CardHoverEffect } from './components/Hobbeis/Hobis';
 import { useState } from 'react';
 import Skill from './components/Skill/Skill';
-import PasswordForm from './components/Auth/Logine';
+
 
 
 
@@ -43,7 +43,7 @@ function App() {
      
        <InfiniteMovingCard/>
       <ContactPage/>
-      <PasswordForm/>
+      {/* <PasswordForm/> */}
       </div>
     </div>
 
